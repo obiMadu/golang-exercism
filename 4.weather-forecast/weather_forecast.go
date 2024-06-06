@@ -1,5 +1,6 @@
 // Package weather forecasts weather conditions for the country of Goblinocus
 package weather
+// CurrentCondition variable stores the current weather condition
 
 var CurrentCondition string
 var CurrentLocation string
