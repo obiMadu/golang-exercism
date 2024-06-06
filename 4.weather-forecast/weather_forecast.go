@@ -1,3 +1,4 @@
+// Package weather forecasts weather conditions for the country of Goblinocus
 package weather
 
 var CurrentCondition string
