@@ -52,8 +52,9 @@ func FirstTurn(card1, card2, dealerCard string) string {
 	case cardSum >= 12 && cardSum <= 16:
 		if ParseCard(dealerCard) >= 7 {
 			response = "H"
+		} else {
+			response = "S"
 		}
-		response = "S"
 	case cardSum <= 11:
 		response = "H"
 	}
