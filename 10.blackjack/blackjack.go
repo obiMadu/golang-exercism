@@ -42,10 +42,9 @@ func FirstTurn(card1, card2, dealerCard string) string {
 	switch {
 	case cardSum == 22:
 		response = "P"
-	case cardSum == 21:
-		if ParseCard(dealerCard) != 11 && ParseCard(dealerCard) != 10 {
-			response = "W"
-		}
+	case cardSum == 21 && ParseCard(dealerCard) != 11 && ParseCard(dealerCard) != 10:
+		response = "W"
+	case cardSum == 21 && (ParseCard(dealerCard) == 11 || ParseCard(dealerCard) == 10):
 		response = "S"
 	case cardSum >= 17 && cardSum <= 20:
 		response = "S"
