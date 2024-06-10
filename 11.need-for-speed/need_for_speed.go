@@ -16,6 +16,10 @@ func NewCar(speed, batteryDrain int) Car {
 	}
 }
 
+type Track struct {
+	distance int
+}
+
 // NewTrack creates a new track
 func NewTrack(distance int) Track {
 	panic("Please implement the NewTrack function")
